@@ -33,7 +33,7 @@ for t in CL:
                 MM+=int(t[(r+1)::])
                 MM*=MolecularMassChart.get(t[:(r+1):])
                 MolecularMass+=MM
-                MM-=MM
+                MM = 0
                 break
 print(str(MolecularMass)+' g/mol')
 
